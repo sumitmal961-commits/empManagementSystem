@@ -36,7 +36,7 @@ function EmpDetails() {
                     <div className="emp-card-header bg-primary text-white text-center">
                         {profileImage ? (
                             <img
-                                src={`http://localhost:8080/uploads/${profileImage}`}
+                                src={`https://empbackendsystem.onrender.com/uploads/${profileImage}`}
                                 alt={name}
                                 className="emp-profile-img"
                             />
