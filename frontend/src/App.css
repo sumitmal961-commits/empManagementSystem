@@ -1,0 +1,138 @@
+.formarea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #ccc;
+}
+
+.auth-card h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.auth-card p {
+    text-align: center;
+}
+
+.auth-card .btn {
+    padding: 10px;
+}
+
+
+
+
+/* Container */
+.emp-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f2f2f2;
+  padding: 1rem;
+}
+
+/* Card */
+.emp-card {
+  width: 26rem; /* default width */
+  border: none;
+  border-radius: 1rem !important;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: width 0.3s ease;
+}
+
+/* Header section */
+.emp-card-header {
+  padding: 6rem 0 5rem;
+  position: relative;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+/* Profile Image */
+.emp-profile-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 4px solid #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+}
+
+/* Placeholder image */
+.emp-placeholder-img {
+  width: 100px;
+  height: 100px;
+  font-size: 36px;
+  background-color: white;
+  color: #0d6efd;
+  font-weight: bold;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .emp-card {
+    width: 90vw; /* almost full width on tablets */
+  }
+  
+  .emp-profile-img {
+    width: 120px;
+    height: 120px;
+    top: 50%;
+  }
+
+  .emp-placeholder-img {
+    width: 80px;
+    height: 80px;
+    font-size: 28px;
+    top: 55%;
+  }
+}
+
+@media (max-width: 480px) {
+  .emp-card {
+    width: 100vw; /* full width on small phones */
+    border-radius: 0; /* no border radius on tiny screens */
+    box-shadow: none; /* remove shadow for cleaner mobile look */
+  }
+
+  .emp-card-header {
+    padding: 4rem 0 3rem;
+  }
+
+  .emp-profile-img {
+    width: 100px;
+    height: 100px;
+    top: 45%;
+  }
+
+  .emp-placeholder-img {
+    width: 70px;
+    height: 70px;
+    font-size: 24px;
+    top: 50%;
+  }
+}
